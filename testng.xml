@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="6">
+    <test verbose="2" preserve-order="true" name="Check VM Class">
+        <classes>
+            <class name="org.example.CalculatorPageTest">
+                <methods>
+                    <include name="checkInformationInVmClassString"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Check region">
+        <classes>
+            <class name="org.example.CalculatorPageTest">
+                <methods>
+                    <include name="checkRegion"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Check SSD">
+        <classes>
+            <class name="org.example.CalculatorPageTest">
+                <methods>
+                    <include name="checkSSD"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Check Instance Type">
+        <classes>
+            <class name="org.example.CalculatorPageTest">
+                <methods>
+                    <include name="checkInstanceType"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Check commitment">
+        <classes>
+            <class name="org.example.CalculatorPageTest">
+                <methods>
+                    <include name="checkCommitment"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Check Cost">
+        <classes>
+            <class name="org.example.CalculatorPageTest">
+                <methods>
+                    <include name="checkCost"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Paste bin">
+        <classes>
+            <class name="org.example.PasteBinTest">
+                <methods>
+                    <include name="paste"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
