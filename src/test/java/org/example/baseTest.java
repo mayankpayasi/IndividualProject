@@ -45,10 +45,10 @@ public class baseTest {
     }
 
 
-    @AfterMethod(alwaysRun = true)
+  @AfterMethod(alwaysRun = true)
     public void closeDriver() {
-        driver.quit();
-    }
+     driver.quit();
+   }
 
 
 }
